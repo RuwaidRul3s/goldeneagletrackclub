@@ -1,0 +1,54 @@
+.form {
+    padding: 4rem;
+    width: 90%;
+    margin: 4rem auto 0 auto;
+
+
+    &_feild {
+        padding: 2rem;
+        display: block;
+        border: 1px solid black;
+        margin-bottom: 3rem;
+        width: 100%;
+
+        &:focus {
+            outline: none;
+        }
+
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: black;
+        opacity: 1;
+    }
+
+    textarea {
+        height: 20rem;
+        resize: none;
+    }
+
+    input[type=submit] {
+        width: 20%;
+        margin-bottom: 2rem;
+        background-color: $primary-color;
+        padding: 2rem;
+        color: white;
+        border: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        display: flex;
+        margin-left: auto;
+    }
+
+
+
+
+}
+
+.checkbutton-wrapper {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    font-size: 1.7rem;
+}

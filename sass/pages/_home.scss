@@ -1,0 +1,300 @@
+p {
+    font-size: 1.7rem;
+}
+
+
+.main-header {
+    background-image: url(/assets/imgs/main-bg.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-color: $secondary-color;
+    // -webkit-filter: grayscale(100%);
+    // /* Safari 6.0 - 9.0 */
+    // filter: grayscale(100%);
+
+
+}
+
+
+
+.header-content {
+    min-width: 700px;
+    padding: 4rem;
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    background-color: $secondary-color;
+    transform: translate(-50%, -50%);
+}
+
+.primary-headeing {
+    color: black;
+    font-size: 4.8rem;
+}
+
+.u-center {
+    text-align: center;
+}
+
+.secondary-headeing {
+    font-size: 3.6rem;
+
+}
+
+.section-paragraph {
+    font-size: 2.4rem;
+    max-width: 500px;
+    margin-top: 1rem;
+}
+
+
+.custom-path1 {
+
+
+    -webkit-clip-path: polygon(0 0, 100% 0%, 43% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 43% 100%, 0% 100%);
+
+}
+
+.custom-path3 {
+
+
+    -webkit-clip-path: polygon(0 0, 73% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 73% 0, 100% 100%, 0 100%);
+
+}
+
+.custom-path-footer {
+
+
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+
+}
+
+
+
+.padding-0 {
+    padding: 0;
+}
+
+
+
+.custom-path2 {
+
+
+    -webkit-clip-path: polygon(19% 0, 100% 0%, 100% 99%, 0 100%);
+    clip-path: polygon(19% 0, 100% 0%, 100% 99%, 0 100%);
+
+}
+
+.seconday-color-bg {
+    background-color: $secondary-color;
+
+}
+
+
+// navigation styling
+
+.navigation {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.navigation .links {
+
+    flex-grow: 2;
+}
+
+.title,
+.sub-heading {
+    color: white;
+}
+
+.title {
+    font-size: 2.4rem;
+}
+
+.sub-heading {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.company-info {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navigation nav ul {
+    display: flex;
+    list-style: none;
+    padding: 3rem;
+    justify-content: space-around;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.6rem;
+    }
+}
+
+.navigation .logo {
+    max-width: 700px;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.navigation .logo img {
+    width: 20%;
+
+}
+
+.position-absoulte {
+    position: absolute;
+
+}
+
+.position-relative {
+    position: relative;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+
+
+.twenty-percent-top {
+    top: 20%;
+}
+
+
+.u-center {
+    text-align: center;
+}
+
+.u-margin-2 {
+    margin-top: 2rem;
+}
+
+.u-margin-4 {
+    margin-top: 4rem;
+}
+
+
+
+
+.Our-Values-section img {
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+
+.sixty-percent-left {
+    left: 65%;
+}
+
+
+.Core-values-list {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    list-style-type: decimal;
+    gap: 2rem;
+}
+
+.Core-values-list li {
+    font-size: 2.4rem;
+}
+
+
+.section-title {
+    text-align: center;
+    font-size: 7.2rem;
+}
+
+
+
+.become-memeber-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.become-memeber-btn {
+    padding: 2rem 4rem;
+    background-color: black;
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+
+
+.card-img-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(/assets/imgs/main-bg.jpg);
+
+}
+
+.card {
+    height: 40rem;
+    width: 45rem;
+    font-size: 1.5em;
+    color: white;
+    border-radius: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    text-decoration: none;
+    gap: 2rem;
+}
+
+.card h1 {
+    font-size: 2.8rem;
+}
+
+.card p {
+    font-size: 1.6rem;
+
+
+}
+
+.become-memeber img {
+    width: 100%;
+}
+
+.section-margin {
+    margin-top: 13rem;
+}
+
+.margin-top-5 {
+    margin-top: 5rem;
+}
+
+.align-start {
+    align-self: flex-start;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+// .wrapper p {
+//     font-size: 1.7rem;
+
+// }

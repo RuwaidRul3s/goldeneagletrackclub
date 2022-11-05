@@ -1,0 +1,48 @@
+.accordion {
+    width: 70rem;
+    margin: 0 auto;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &_item {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 2.4rem;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        row-gap: 32px;
+        align-items: center;
+        background-color: white;
+    }
+
+    &_text {
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: $primary-color;
+    }
+
+    &_hidden-box {
+        display: none;
+
+        ul {
+            font-size: 2rem;
+            color: $primary-color;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+
+
+}
+
+
+.open {
+    border-top: 4px solid $secondary-color-v2 ;
+}
+
+.open .accordion_hidden-box {
+    display: block;
+}
