@@ -1,0 +1,196 @@
+header {
+
+    position: relative;
+    background-image: url(/assets/imgs/main-bg.jpg);
+    min-height: 95vh;
+    background-size: cover;
+
+
+    nav {
+        background-color: $primary-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 5.2rem;
+        margin-bottom: 1rem;
+        line-height: 1.05;
+    }
+
+    h2 {
+        font-size: 4.4rem;
+    }
+
+    p {
+        font-size: 2.4rem;
+        line-height: 1.6;
+    }
+
+
+}
+
+.header-container {
+    padding: 2rem 4rem;
+    max-width: 70rem;
+    position: absolute;
+    left: 60%;
+    top: 30%;
+}
+
+
+
+
+.navigation {
+    z-index: 2;
+
+    width: 60%;
+
+    .toggler {
+
+        z-index: 3;
+        position: absolute;
+        right: 0.5rem;
+        top: 0.5rem;
+        width: 40px;
+        height: 40px;
+        opacity: 0;
+    }
+
+    .hamburger {
+
+        opacity: 0;
+        position: absolute;
+        right: 0.5rem;
+
+        width: 40px;
+        height: 40px;
+        background-color: $primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        top: 0.5rem;
+    }
+
+    .hamburger > div {
+        position: absolute;
+        width: 70%;
+        height: 3px;
+        border-radius: 1.5px;
+        background-color: $secondary-color;
+        transition: .4s;
+    }
+
+    .hamburger > div::before,
+    .hamburger > div::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        border-radius: 1.5px;
+        background-color: $secondary-color;
+        transition: .4s;
+    }
+
+    .hamburger > div::before {
+        top: -10px;
+    }
+
+    .hamburger > div::after {
+        top: 10px;
+    }
+
+    .toggler:checked ~ .links {
+        visibility: visible;
+    }
+
+    .toggler:checked:hover + .hamburger > div {
+        transform: rotate(225deg);
+    }
+
+    .toggler:checked + .hamburger > div {
+        transform: rotate(135deg);
+    }
+
+    .toggler:checked + .hamburger > div::after,
+    .toggler:checked + .hamburger > div::before {
+        transform: rotate(90deg);
+        top: 0;
+    }
+}
+
+
+.links {
+
+    padding: 3rem;
+    display: flex;
+    justify-content: space-around;
+
+    list-style: none;
+
+    a {
+
+        color: white;
+        text-decoration: none;
+        font-size: 1.8rem;
+    }
+}
+
+.logo {
+    width: 40%;
+}
+
+.company-name .name,
+.subtitle {
+    max-width: 1000px;
+    color: white;
+}
+
+.company-name .name {
+    font-size: 1.8rem;
+}
+
+.company-name .subtitle {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+
+@media screen and(max-width:966px) {
+
+
+    .navigation {
+        .hamburger {
+            opacity: 1;
+        }
+
+        .links {
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            visibility: hidden;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .header-container {
+        top: auto;
+        left: 0;
+        bottom: 0;
+        max-width: none;
+    }
+}

@@ -1,29 +1,41 @@
 .footer {
+    background-color: $primary-color;
+    padding: 5rem 0;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    color: $secondary-color;
 
-    /* Created with https://www.css-gradient.com */
 
-    position: relative;
-
-    img {
-        width: 100%;
-    }
-
-    h1 {
-        max-width: 450px;
-        color: white;
-        font-size: 10rem;
-        text-align: center;
-
-    }
-
-    .footer_wrapper {
-        height: 100%;
+    &__copyright {
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
+        margin-top: 2rem;
+    }
+}
+
+
+
+.footer__powerdBy {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+    align-items: center;
+}
+
+.footer__powerdBy a {
+    max-width: 250px;
+
+    // target to large desktop
+    @media (max-width: 1200px) {
+        & {
+            max-width: 200px;
+        }
     }
 
+}
 
-
+.footer__powerdBy img {
+    width: 100%;
 }

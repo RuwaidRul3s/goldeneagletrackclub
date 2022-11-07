@@ -1,118 +1,65 @@
-$grid-columns: 12; //standard
-
-$grid-gaps: (
-    "0":0,
-    "1":1rem,
-    "2":2rem,
-    "3":3rem,
-);
-
-
-$layout-values: flex-start, flex-end, center, space-between, space-around;
-
-
 @use "sass:math";
 
-
-// base layout classes  -> center container 
+$grid-columns: 3;
+$grid-gaps: (
+    "0":0,
+    "1":10px,
+    "2":20px,
+    "3":30px
+);
+// base layout classes ==>Center content
 
 .container {
     width: 100%;
-    // max-width: 1200px;
+    max-width: 1200px;
+    box-sizing: border-box;
     margin: 0 auto;
-
-    // padding: 0 2rem;
 }
 
+//genreate column classes 
 
 .row {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
-    flex-flow: row wrap; // if screen size get smaller it will wrap flex-items
-}
 
-// Grid gaps 
-
-@each $key,
-$val in $grid-gaps {
-
-    // Target all descendant of col class
-    .gap-#{$key} > * {
-        padding: $val;
+    .col {
+        flex: 1;
     }
 
-    .gap-#{$key} {
-        margin-left: -$val;
-        margin-right: -$val;
-    }
-}
-
-
-
-// justify contetn classes
-
-@each $val in $layout-values {
-    .justify-#{$val} {
-        justify-content: $val;
-    }
-}
-
-
-
-// column classes
-
-//  .col-xs-12 --> col-extra small screen - give it 12 column (100%)
-
-@include xs {
-    @for $i from 1 through $grid-columns {
-        .col-#{$i}-xs {
-            flex-grow: 0;
-
-            width: ($i *100%)/$grid-columns;
+    @for $size from 1 through 12 {
+        .col-#{$size} {
+            width: ($size/12)*100%;
+            ;
         }
     }
-}
 
-@include sm {
-    @for $i from 1 through $grid-columns {
-        .col-#{$i}-sm {
-            flex-grow: 0;
-
-            width: ($i *100%)/$grid-columns;
-        }
-    }
 }
 
 
-
-@include md {
-    @for $i from 1 through $grid-columns {
-        .col-#{$i}-md {
-            flex-grow: 0;
-
-            width: ($i *100%)/$grid-columns;
+@mixin grid-system($device) {
+    .row {
+        .col-#{$device} {
+            flex: 1;
         }
+
+        @for $size from 1 through 12 {
+            .col-#{$device}-#{$size} {
+                width: ($size/12)*100%;
+            }
+        }
+
     }
 }
 
-
-@include lg {
-    @for $i from 1 through $grid-columns {
-        .col-#{$i}-lg {
-            flex-grow: 0;
-
-            width: ($i *100%)/$grid-columns;
-        }
-    }
+//Tablet Devices
+@media (min-width:768px) {
+    @include grid-system('tablet');
 }
 
-
-@include xl {
-    @for $i from 1 through $grid-columns {
-        .col-#{$i}-xl {
-            flex-grow: 0;
-
-            width: ($i *100%)/$grid-columns;
-        }
-    }
+//Desktop Devices
+@media (min-width:1200px) {
+    @include grid-system('desktop');
 }

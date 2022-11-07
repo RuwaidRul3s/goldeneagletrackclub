@@ -1,31 +1,37 @@
-p {
-    font-size: 1.7rem;
-}
-
-
-.main-header {
-    background-image: url(/assets/imgs/main-bg.jpg);
-    background-size: cover;
+body {
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    background-color: $secondary-color;
-    // -webkit-filter: grayscale(100%);
-    // /* Safari 6.0 - 9.0 */
-    // filter: grayscale(100%);
-
-
 }
 
+// p {
+//     font-size: 1.7rem;
+// }
 
 
-.header-content {
-    min-width: 700px;
-    padding: 4rem;
-    position: absolute;
-    top: 60%;
-    left: 75%;
-    background-color: $secondary-color;
-    transform: translate(-50%, -50%);
-}
+// .main-header {
+//     background-image: url(/assets/imgs/main-bg.jpg);
+//     background-size: cover;
+//     min-height: 100vh;
+//     background-color: $secondary-color;
+//     // -webkit-filter: grayscale(100%);
+//     // /* Safari 6.0 - 9.0 */
+//     // filter: grayscale(100%);
+
+
+// }
+
+
+
+// .header-content {
+//     min-width: 700px;
+//     padding: 4rem;
+//     position: absolute;
+//     top: 60%;
+//     left: 75%;
+//     background-color: $secondary-color;
+//     transform: translate(-50%, -50%);
+// }
 
 .primary-headeing {
     color: black;
@@ -36,57 +42,57 @@ p {
     text-align: center;
 }
 
-.secondary-headeing {
-    font-size: 3.6rem;
+// .secondary-headeing {
+//     font-size: 3.6rem;
 
-}
+// }
 
-.section-paragraph {
-    font-size: 2.4rem;
-    max-width: 500px;
-    margin-top: 1rem;
-}
-
-
-.custom-path1 {
+// .section-paragraph {
+//     font-size: 2.4rem;
+//     max-width: 500px;
+//     margin-top: 1rem;
+// }
 
 
-    -webkit-clip-path: polygon(0 0, 100% 0%, 43% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0%, 43% 100%, 0% 100%);
-
-}
-
-.custom-path3 {
+// .custom-path1 {
 
 
-    -webkit-clip-path: polygon(0 0, 73% 0, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 73% 0, 100% 100%, 0 100%);
+//     -webkit-clip-path: polygon(0 0, 100% 0%, 43% 100%, 0% 100%);
+//     clip-path: polygon(0 0, 100% 0%, 43% 100%, 0% 100%);
 
-}
+// }
 
-.custom-path-footer {
-
-
-    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-
-}
+// .custom-path3 {
 
 
+//     -webkit-clip-path: polygon(0 0, 73% 0, 100% 100%, 0 100%);
+//     clip-path: polygon(0 0, 73% 0, 100% 100%, 0 100%);
 
-.padding-0 {
-    padding: 0;
-}
+// }
+
+// .custom-path-footer {
+
+
+//     -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+//     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+
+// }
 
 
 
-.custom-path2 {
+// .padding-0 {
+//     padding: 0;
+// }
 
 
-    -webkit-clip-path: polygon(19% 0, 100% 0%, 100% 99%, 0 100%);
-    clip-path: polygon(19% 0, 100% 0%, 100% 99%, 0 100%);
 
-}
+// .custom-path2 {
+
+
+//     -webkit-clip-path: polygon(19% 0, 100% 0%, 100% 99%, 0 100%);
+//     clip-path: polygon(19% 0, 100% 0%, 100% 99%, 0 100%);
+
+// }
 
 .seconday-color-bg {
     background-color: $secondary-color;
@@ -94,64 +100,64 @@ p {
 }
 
 
-// navigation styling
+// // navigation styling
 
-.navigation {
-    display: flex;
-    align-items: center;
+// .navigation {
+//     display: flex;
+//     align-items: center;
 
-    justify-content: space-between;
-}
+//     justify-content: space-between;
+// }
 
-.navigation .links {
+// .navigation .links {
 
-    flex-grow: 2;
-}
+//     flex-grow: 2;
+// }
 
-.title,
-.sub-heading {
-    color: white;
-}
+// .title,
+// .sub-heading {
+//     color: white;
+// }
 
-.title {
-    font-size: 2.4rem;
-}
+// .title {
+//     font-size: 2.4rem;
+// }
 
-.sub-heading {
-    font-weight: bold;
-    font-size: 1.4rem;
-}
+// .sub-heading {
+//     font-weight: bold;
+//     font-size: 1.4rem;
+// }
 
-.company-info {
-    display: flex;
-    flex-direction: column;
+// .company-info {
+//     display: flex;
+//     flex-direction: column;
 
-}
+// }
 
-.navigation nav ul {
-    display: flex;
-    list-style: none;
-    padding: 3rem;
-    justify-content: space-around;
+// .navigation nav ul {
+//     display: flex;
+//     list-style: none;
+//     padding: 3rem;
+//     justify-content: space-around;
 
-    a {
-        text-decoration: none;
-        color: white;
-        font-size: 1.6rem;
-    }
-}
+//     a {
+//         text-decoration: none;
+//         color: white;
+//         font-size: 1.6rem;
+//     }
+// }
 
-.navigation .logo {
-    max-width: 700px;
-    display: flex;
-    gap: 3rem;
-    align-items: center;
-}
+// .navigation .logo {
+//     max-width: 700px;
+//     display: flex;
+//     gap: 3rem;
+//     align-items: center;
+// }
 
-.navigation .logo img {
-    width: 20%;
+// .navigation .logo img {
+//     width: 20%;
 
-}
+// }
 
 .position-absoulte {
     position: absolute;
@@ -188,6 +194,8 @@ p {
 
 
 
+
+
 .Our-Values-section img {
     width: 100%;
     -webkit-filter: grayscale(100%);
@@ -212,6 +220,8 @@ p {
 .Core-values-list li {
     font-size: 2.4rem;
 }
+
+
 
 
 .section-title {
@@ -245,8 +255,10 @@ p {
 }
 
 .card {
-    height: 40rem;
-    width: 45rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    height: 35rem;
+    width: 33rem;
     font-size: 1.5em;
     color: white;
     border-radius: 1em;
@@ -298,3 +310,7 @@ p {
 //     font-size: 1.7rem;
 
 // }
+
+
+
+//  Madia quaries 
