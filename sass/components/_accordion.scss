@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    padding-right: 4rem;
 
     &_item {
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -46,3 +47,4 @@
 .open .accordion_hidden-box {
     display: block;
 }
+

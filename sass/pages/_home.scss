@@ -1,7 +1,8 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+
+    height: 100%;
 }
 
 // p {
@@ -100,65 +101,6 @@ body {
 }
 
 
-// // navigation styling
-
-// .navigation {
-//     display: flex;
-//     align-items: center;
-
-//     justify-content: space-between;
-// }
-
-// .navigation .links {
-
-//     flex-grow: 2;
-// }
-
-// .title,
-// .sub-heading {
-//     color: white;
-// }
-
-// .title {
-//     font-size: 2.4rem;
-// }
-
-// .sub-heading {
-//     font-weight: bold;
-//     font-size: 1.4rem;
-// }
-
-// .company-info {
-//     display: flex;
-//     flex-direction: column;
-
-// }
-
-// .navigation nav ul {
-//     display: flex;
-//     list-style: none;
-//     padding: 3rem;
-//     justify-content: space-around;
-
-//     a {
-//         text-decoration: none;
-//         color: white;
-//         font-size: 1.6rem;
-//     }
-// }
-
-// .navigation .logo {
-//     max-width: 700px;
-//     display: flex;
-//     gap: 3rem;
-//     align-items: center;
-// }
-
-// .navigation .logo img {
-//     width: 20%;
-
-// }
-
 .position-absoulte {
     position: absolute;
 
@@ -191,7 +133,13 @@ body {
     margin-top: 4rem;
 }
 
+.u-grid-margin-4 {
+    margin: 4rem;
+}
 
+.full-screen {
+    max-width: 120rem;
+}
 
 
 
@@ -283,7 +231,8 @@ body {
 }
 
 .become-memeber img {
-    width: 100%;
+    margin-left: 1rem;
+    width: 90%;
 }
 
 .section-margin {
@@ -299,6 +248,7 @@ body {
 }
 
 .wrapper {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -306,11 +256,67 @@ body {
     gap: 2rem;
 }
 
-// .wrapper p {
-//     font-size: 1.7rem;
-
-// }
 
 
+// Media Quaires for Become Member section 
 
-//  Madia quaries 
+
+@media screen and (max-width:600px) {
+    .become-memeber img {
+        width: 80%;
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width:998px) {
+    .become-memeber img {
+        margin-left: 4rem;
+    }
+}
+
+@media screen and (min-width:999px) {
+    .become-memeber img {
+        margin-left: 5rem;
+    }
+}
+
+
+// Section Title Media Quaires 
+
+@media screen and (min-width:300px) and (max-width:1200px) {
+    .section-title {
+        font-size: 4rem;
+    }
+
+    .primary-headeing {
+        font-size: 2.4rem;
+    }
+}
+
+
+
+.Contact_us_left {
+    min-height: 100vh;
+}
+
+
+.contact_us h1 {
+    color: white;
+
+    font-size: 7.2rem;
+}
+
+.defualt_flex {
+    align-items: stretch;
+}
+
+
+.Contact_us_become-memeber_text {
+    flex-wrap: wrap;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
