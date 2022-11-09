@@ -43,10 +43,10 @@ body {
     text-align: center;
 }
 
-// .secondary-headeing {
-//     font-size: 3.6rem;
+.secondary-headeing {
+    font-size: 2.4rem;
 
-// }
+}
 
 // .section-paragraph {
 //     font-size: 2.4rem;
@@ -63,13 +63,13 @@ body {
 
 // }
 
-// .custom-path3 {
+.custom-path3 {
 
 
-//     -webkit-clip-path: polygon(0 0, 73% 0, 100% 100%, 0 100%);
-//     clip-path: polygon(0 0, 73% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 73% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 73% 0, 100% 100%, 0 100%);
 
-// }
+}
 
 // .custom-path-footer {
 
@@ -141,6 +141,10 @@ body {
     max-width: 120rem;
 }
 
+.full-width {
+    width: 100%;
+}
+
 
 
 
@@ -199,6 +203,7 @@ body {
 
 .card-img-1 {
     background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(/assets/imgs/main-bg.jpg);
+    background-size: cover;
 
 }
 
@@ -258,6 +263,8 @@ body {
 
 
 
+
+
 // Media Quaires for Become Member section 
 
 
@@ -291,7 +298,17 @@ body {
     .primary-headeing {
         font-size: 2.4rem;
     }
+
+
+
+
 }
+
+
+
+
+
+
 
 
 
@@ -319,4 +336,15 @@ body {
     align-items: center;
     justify-content: center;
 
+}
+
+.reverse {
+    flex-direction: row;
+}
+
+
+@media screen and (min-width:1200px) {
+    .reverse {
+        flex-direction: row-reverse;
+    }
 }

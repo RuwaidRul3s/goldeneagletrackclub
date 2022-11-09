@@ -1,9 +1,13 @@
-header {
-
+.header-bg {
     position: relative;
     background-image: url(/assets/imgs/main-bg.jpg);
     min-height: 95vh;
     background-size: cover;
+}
+
+header {
+
+
 
 
     nav {

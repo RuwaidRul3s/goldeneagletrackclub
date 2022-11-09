@@ -54,6 +54,12 @@ $grid-gaps: (
     }
 }
 
+
+//small mobile device < 768px 
+@media(min-width:48px) {
+    @include grid-system('phone');
+}
+
 //Tablet Devices
 @media (min-width:768px) {
     @include grid-system('tablet');

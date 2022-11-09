@@ -30,7 +30,8 @@
     }
 
     input[type=submit] {
-        width: 18%;
+
+        width: 50%;
         margin-top: 2rem;
         background-color: $primary-color;
         padding: 2rem;
@@ -53,3 +54,6 @@
     gap: 1rem;
     font-size: 1.7rem;
 }
+
+
+// Media Quaries for form

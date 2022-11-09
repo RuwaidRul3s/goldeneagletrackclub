@@ -48,3 +48,11 @@
     display: block;
 }
 
+
+
+@media screen and(max-width:600px) {
+    .accordion {
+        padding-right: 0;
+        width: 34rem;
+    }
+}
