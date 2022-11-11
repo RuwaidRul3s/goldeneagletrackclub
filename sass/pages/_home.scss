@@ -5,9 +5,12 @@ body {
     height: 100%;
 }
 
-// p {
-//     font-size: 1.7rem;
-// }
+@media screen and(min-width:250px) and(max-width:600px) {
+    p {
+        font-size: 1.5rem;
+    }
+}
+
 
 
 // .main-header {
@@ -299,6 +302,10 @@ body {
         font-size: 2.4rem;
     }
 
+    .secondary-headeing {
+        font-size: 1.6rem;
+    }
+
 
 
 
@@ -346,5 +353,31 @@ body {
 @media screen and (min-width:1200px) {
     .reverse {
         flex-direction: row-reverse;
+    }
+}
+
+
+// Card media 
+
+@media screen and (min-width:250px) and (max-width:600px) {
+    .card {
+        width: 28rem;
+    }
+}
+
+
+
+@media screen and(min-width:250px)and(max-width:1400px) {
+    .contact_us h1 {
+        font-size: 3.2rem;
+
+    }
+
+    .Contact_us_become-memeber_text {
+        padding: 2rem;
+    }
+
+    .u-margin-2 {
+        margin-top: 0px;
     }
 }

@@ -152,7 +152,7 @@ header {
 }
 
 .company-name .name {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
 }
 
 .company-name .subtitle {
@@ -207,5 +207,53 @@ header {
 
     header {
         background-position-x: 22%;
+    }
+
+
+}
+
+
+
+
+
+// media quary for the header nav 
+
+
+@media screen and (min-width:250px) and (max-width:600px) {
+    header nav {
+        padding: 2rem;
+    }
+
+    .u-container-center {
+        flex-direction: column;
+    }
+
+    .header-bg {
+        min-height: 200vh;
+    }
+
+    .navigation .hamburger {
+        top: 2rem;
+    }
+
+    header h1 {
+        font-size: 4.2rem;
+    }
+
+    header h2 {
+        font-size: 3.4rem;
+    }
+
+
+}
+
+
+@media screen and(min-width:1024px) and (max-width:1440px) {
+    .header-bg {
+        overflow: hidden;
+    }
+
+    .header-container {
+        top: 20%;
     }
 }

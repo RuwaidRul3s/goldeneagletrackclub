@@ -53,6 +53,11 @@
 @media screen and(max-width:600px) {
     .accordion {
         padding-right: 0;
-        width: 34rem;
+        width: 30rem;
+    }
+
+    .accordion_hidden-box {
+        font-size: 1.5rem;
+        color: Red;
     }
 }

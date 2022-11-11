@@ -2,8 +2,62 @@
     width: 100%;
 }
 
+.form textarea {
+    margin-top: 3rem;
+}
+
+.dropdown {
+    display: block;
+
+    border: 1px solid black;
+
+    width: 100%;
+
+    position: relative;
+}
+
+.dropdown-select {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 4px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.dropdown-list {
+    opacity: 0;
+    visibility: hidden;
+    border: 1px solid black;
+    position: absolute;
+    border-radius: 4px;
+    background-color: white;
+
+    top: 101%;
+    left: 0;
+    right: 0;
+}
+
+.dropdown-list__item {
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.4rem;
+
+}
+
+.dropdown-list__item:hover {
+    background-color: $secondary-color;
+}
+
+.card-img-no-black {
+    background-image: url(/assets/imgs/main-bg.jpg);
+    background-size: cover;
+}
 
 
-.path-1 {
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+.u-padding-2 {
+    padding: 2rem;
 }

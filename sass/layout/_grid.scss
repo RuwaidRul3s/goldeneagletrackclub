@@ -69,3 +69,7 @@ $grid-gaps: (
 @media (min-width:1200px) {
     @include grid-system('desktop');
 }
+
+@media (min-width:1024px) {
+    @include grid-system('laptop');
+}
