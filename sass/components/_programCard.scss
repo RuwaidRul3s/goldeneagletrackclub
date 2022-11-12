@@ -1,7 +1,5 @@
 .custom_card {
 
-
-
     overflow: hidden;
 
     gap: 3rem;
@@ -13,16 +11,18 @@
 
     background-color: $secondary-color;
     min-height: 800px;
-    padding: 2rem 4rem;
+    // padding: 2rem 4rem;
 
     transition: 0.7s all ease-in-out;
 
     .card-title {
+        background-color: $primary-color;
         width: 100%;
         font-size: 1.8rem;
         color: white;
-        text-align: left;
-        border-bottom: 2px solid $secondary-color;
+        text-align: center;
+        border-top: 10px solid $secondary-color;
+        padding: 2rem;
     }
 
     p {
@@ -31,7 +31,7 @@
         background-color: $secondary-color;
         font-size: 1.6rem;
         color: black;
-        padding: 2rem 4rem;
+        padding: 2rem;
     }
 
     .custom_card_Button {
@@ -42,15 +42,19 @@
         text-decoration: none;
         background-color: $primary-color;
         color: $secondary-color;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
     }
 
 
+
+
 }
 
 
 
 
 
-.custom_card:hover {
-    background-image: url(/assets/imgs/main-bg.jpg);
-}
+// .custom_card:hover {
+//     background-image: url(/assets/imgs/main-bg.jpg);
+// }

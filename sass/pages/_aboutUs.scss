@@ -1,0 +1,70 @@
+.aboutUs img {
+    width: 100%;
+}
+
+.about-us-content-wrapper {
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+
+    h1 {
+        text-align: left;
+    }
+
+    p {
+        text-align: left;
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+}
+
+
+.aboutUs-button {
+    font-size: 1.6rem;
+
+    padding: 2rem 4rem;
+    text-decoration: none;
+    background-color: $primary-color;
+    color: $secondary-color;
+
+}
+
+
+.about-us-content-wrapper-items {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+
+}
+
+.FAQ {
+    // border-bottom: 5px solid $secondary-color;
+    min-height: 70vh;
+    background-color: #181818;
+
+    h1 {
+        margin-top: 11rem;
+        text-align: center;
+        color: white;
+    }
+
+
+    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.u-no-padding-right {
+    padding-right: 0;
+}
+
+.u-bold {
+    font-weight: bold;
+}

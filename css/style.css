@@ -398,29 +398,29 @@ header p {
   align-items: flex-start;
   background-color: #F0E43F;
   min-height: 800px;
-  padding: 2rem 4rem;
   transition: 0.7s all ease-in-out; }
   .custom_card .card-title {
+    background-color: #181818;
     width: 100%;
     font-size: 1.8rem;
     color: white;
-    text-align: left;
-    border-bottom: 2px solid #F0E43F; }
+    text-align: center;
+    border-top: 10px solid #F0E43F;
+    padding: 2rem; }
   .custom_card p {
     margin-top: auto;
     background-color: #F0E43F;
     font-size: 1.6rem;
     color: black;
-    padding: 2rem 4rem; }
+    padding: 2rem; }
   .custom_card .custom_card_Button {
     font-size: 1.6rem;
     padding: 2rem 4rem;
     text-decoration: none;
     background-color: #181818;
-    color: #F0E43F; }
-
-.custom_card:hover {
-  background-image: url(/assets/imgs/main-bg.jpg); }
+    color: #F0E43F;
+    margin-left: 2rem;
+    margin-bottom: 2rem; }
 
 .form {
   padding: 4rem;
@@ -449,18 +449,17 @@ header p {
     color: white;
     border: none;
     text-transform: uppercase;
-    cursor: pointer; }
+    cursor: pointer;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
 
 .checkbutton-wrapper {
   margin-top: 1.5rem;
   display: flex;
   gap: 1rem;
   font-size: 1.7rem; }
-
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100%; }
 
 @media screen and (min-width: 250px) and (max-width: 600px) {
   p {
@@ -699,5 +698,61 @@ body {
 
 .u-padding-2 {
   padding: 2rem; }
+
+.card-image-athlete {
+  background-image: url(/assets/imgs/running.jpg);
+  background-size: cover;
+  background-position-x: 22%; }
+
+.card-image-website {
+  background-image: url(/assets/imgs/main-bg.jpg);
+  background-size: cover; }
+
+.aboutUs img {
+  width: 100%; }
+
+.about-us-content-wrapper {
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%; }
+  .about-us-content-wrapper h1 {
+    text-align: left; }
+  .about-us-content-wrapper p {
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: 1.6; }
+
+.aboutUs-button {
+  font-size: 1.6rem;
+  padding: 2rem 4rem;
+  text-decoration: none;
+  background-color: #181818;
+  color: #F0E43F; }
+
+.about-us-content-wrapper-items {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem; }
+
+.FAQ {
+  min-height: 70vh;
+  background-color: #181818;
+  gap: 4rem;
+  display: flex;
+  flex-direction: column; }
+  .FAQ h1 {
+    margin-top: 11rem;
+    text-align: center;
+    color: white; }
+
+.u-no-padding-right {
+  padding-right: 0; }
+
+.u-bold {
+  font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
