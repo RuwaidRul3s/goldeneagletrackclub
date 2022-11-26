@@ -1,3 +1,7 @@
+
+
+
+
 // control select program drop down  button 
 
 document.querySelector('.icon').addEventListener('click', function () {
@@ -17,3 +21,28 @@ document.querySelector('.icon').addEventListener('click', function () {
         document.querySelector('.dropdown-list').style.visibility = "hidden";
     }
 });
+
+
+//control card light
+
+// var cards = document.querySelectorAll('.custom_card');
+
+// cards.forEach(element => {
+//     element.addEventListener('mouseenter', function () {
+//         this.classList.add('card-img-no-black');
+//         this.classList.remove('card-img-1');
+
+
+//     });
+
+//     element.addEventListener('mouseleave', function () {
+//         this.classList.add('card-img-1');
+//         this.classList.remove('card-img-no-black');
+
+
+//     });
+
+// });
+
+
+

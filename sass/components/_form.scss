@@ -30,7 +30,9 @@
     }
 
     input[type=submit] {
-
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
         width: 50%;
         margin-top: 2rem;
         background-color: $primary-color;
@@ -47,13 +49,19 @@
 
     }
 
+    input[type=checkbox] {
+        // fix ios device problem
+        min-width: 20px;
+    }
+
+
 
 
 
 }
 
 .checkbutton-wrapper {
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
     display: flex;
     gap: 1rem;
     font-size: 1.7rem;
@@ -61,3 +69,10 @@
 
 
 // Media Quaries for form
+
+@media screen and(min-width:250px) and(max-width:600px) {
+    .checkbutton-wrapper {
+
+        font-size: 1.2rem;
+    }
+}

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap");
 *,
 *::after,
 *::before {
@@ -8,9 +9,21 @@
 html {
   font-size: 62.5%; }
 
+body {
+  font-family: 'Poppins', sans-serif; }
+
 .u-container-center {
   width: 100%;
   margin: 0 auto; }
+
+.header-1 {
+  font-size: 1.6rem; }
+
+.header-2 {
+  font-size: 3.2rem; }
+
+.header-3 {
+  font-size: 4.8rem; }
 
 .header-bg {
   position: relative;
@@ -18,6 +31,16 @@ html {
   min-height: 95vh;
   background-size: cover; }
 
+header .dropdown__menu {
+  display: none;
+  position: absolute;
+  right: 0%;
+  background-color: #181818; }
+  header .dropdown__menu ul {
+    display: block;
+    margin: 1rem; }
+    header .dropdown__menu ul li {
+      padding: 10px; }
 header nav {
   background-color: #181818;
   display: flex;
@@ -39,6 +62,9 @@ header p {
   position: absolute;
   left: 60%;
   top: 30%; }
+
+.header-container .header-container-inner h2 {
+  margin-left: 5%; }
 
 .navigation {
   z-index: 1;
@@ -68,7 +94,7 @@ header p {
     width: 70%;
     height: 3px;
     border-radius: 1.5px;
-    background-color: #F0E43F;
+    background-color: #FFD700;
     transition: .4s; }
   .navigation .hamburger > div::before,
   .navigation .hamburger > div::after {
@@ -77,7 +103,7 @@ header p {
     width: 100%;
     height: 3px;
     border-radius: 1.5px;
-    background-color: #F0E43F;
+    background-color: #FFD700;
     transition: .4s; }
   .navigation .hamburger > div::before {
     top: -10px; }
@@ -105,6 +131,10 @@ header p {
     font-size: 1.8rem; }
 
 .logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
   width: 40%; }
 
 .company-name .name,
@@ -120,10 +150,19 @@ header p {
   font-weight: bold; }
 
 @media screen and (max-width: 966px) {
+  header .dropdown__menu {
+    list-style: none;
+    right: 50%;
+    background: none;
+    transform: translateX(50%); }
+    header .dropdown__menu ul {
+      text-align: center;
+      list-style-type: none; }
+
   .navigation .hamburger {
     opacity: 1; }
   .navigation .links {
-    background-color: #F0E43F;
+    background-color: #FFD700;
     position: fixed;
     top: 0;
     left: 0;
@@ -150,6 +189,12 @@ header p {
   header {
     background-position-x: 22%; } }
 @media screen and (min-width: 250px) and (max-width: 600px) {
+  .company-name .name {
+    font-size: 1.4rem; }
+
+  .company-name .subtitle {
+    font-size: 1.2rem; }
+
   header nav {
     padding: 2rem; }
 
@@ -167,12 +212,42 @@ header p {
 
   header h2 {
     font-size: 3.4rem; } }
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
   .header-bg {
     overflow: hidden; }
 
   .header-container {
-    top: 20%; } }
+    top: 20%; }
+
+  .navigation .hamburger {
+    opacity: 1; }
+  .navigation .links {
+    background-color: #FFD700;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem; }
+    .navigation .links a {
+      color: black; }
+
+  .logo {
+    width: 100%; }
+
+  .header-container {
+    top: auto;
+    left: 0;
+    bottom: 0;
+    max-width: none; }
+
+  header {
+    background-position-x: 22%; } }
 @use "sass:math";
 .container {
   width: 100%;
@@ -322,18 +397,50 @@ header p {
 .footer {
   background-color: #181818;
   padding: 5rem 0;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+  color: #FFD700;
   display: flex;
   flex-direction: column;
-  color: #F0E43F; }
-  .footer__copyright {
-    text-align: center;
-    margin-top: 2rem; }
+  width: 100%; }
+  .footer__item {
+    padding: 3rem;
+    background-color: #FFD700;
+    color: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem; }
+    .footer__item__social {
+      padding: 5rem; }
+    .footer__item__separator {
+      font-size: 2rem;
+      padding: 0 0.7rem; }
+    .footer__item p {
+      font-size: inherit; }
+    .footer__item span {
+      display: flex;
+      align-items: center; }
+    .footer__item i {
+      font-size: 2rem;
+      display: block;
+      margin-right: 1rem; }
+
+.footer__item a {
+  text-decoration: none;
+  color: #181818; }
+
+.footer__item__Socail_media {
+  background-color: #FFD700;
+  color: #181818;
+  padding: 3rem;
+  display: flex;
+  gap: 2rem; }
 
 .footer__powerdBy {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  margin-top: 60px;
+  gap: 20px;
   align-items: center; }
 
 .footer__powerdBy a {
@@ -341,6 +448,9 @@ header p {
   @media (max-width: 1200px) {
     .footer__powerdBy a {
       max-width: 200px; } }
+
+.footer__copyright {
+  text-align: center; }
 
 .footer__powerdBy img {
   width: 100%; }
@@ -374,6 +484,8 @@ header p {
       display: flex;
       flex-direction: column;
       gap: 12px; }
+      .accordion_hidden-box ul li {
+        margin-top: 1rem; }
 
 .open {
   border-top: 4px solid #d8cd39; }
@@ -396,7 +508,7 @@ header p {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: #F0E43F;
+  background-color: #FFD700;
   min-height: 800px;
   transition: 0.7s all ease-in-out; }
   .custom_card .card-title {
@@ -405,20 +517,22 @@ header p {
     font-size: 1.8rem;
     color: white;
     text-align: center;
-    border-top: 10px solid #F0E43F;
+    border-top: 10px solid #FFD700;
     padding: 2rem; }
   .custom_card p {
     margin-top: auto;
-    background-color: #F0E43F;
+    background-color: #FFD700;
     font-size: 1.6rem;
     color: black;
-    padding: 2rem; }
+    padding: 2rem;
+    width: 100%;
+    text-align: center; }
   .custom_card .custom_card_Button {
     font-size: 1.6rem;
     padding: 2rem 4rem;
     text-decoration: none;
     background-color: #181818;
-    color: #F0E43F;
+    color: #FFD700;
     margin-left: 2rem;
     margin-bottom: 2rem; }
 
@@ -442,6 +556,9 @@ header p {
     height: 20rem;
     resize: none; }
   .form input[type=submit] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     width: 50%;
     margin-top: 2rem;
     background-color: #181818;
@@ -454,16 +571,34 @@ header p {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0; }
+  .form input[type=checkbox] {
+    min-width: 20px; }
 
 .checkbutton-wrapper {
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   display: flex;
   gap: 1rem;
   font-size: 1.7rem; }
 
 @media screen and (min-width: 250px) and (max-width: 600px) {
+  .checkbutton-wrapper {
+    font-size: 1.2rem; } }
+.goal-card .title p {
+  font-size: 3.2rem;
+  color: black; }
+.goal-card .content p {
+  font-size: 1.8rem;
+  color: black; }
+
+@media screen and (min-width: 250px) and (max-width: 600px) {
   p {
     font-size: 1.5rem; } }
+p {
+  font-size: 1.6rem; }
+
+.u-p-max-width {
+  max-width: 700px; }
+
 .primary-headeing {
   color: black;
   font-size: 4.8rem; }
@@ -479,7 +614,7 @@ header p {
   clip-path: polygon(0 0, 73% 0, 100% 100%, 0 100%); }
 
 .seconday-color-bg {
-  background-color: #F0E43F; }
+  background-color: #FFD700; }
 
 .position-absoulte {
   position: absolute; }
@@ -542,11 +677,13 @@ header p {
   gap: 2rem; }
 
 .become-memeber-btn {
-  padding: 2rem 4rem;
+  padding: 1.5rem 3rem;
   background-color: black;
   color: white;
   font-size: 1.8rem;
-  text-decoration: none; }
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 2rem; }
 
 .card-img-1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/imgs/main-bg.jpg);
@@ -573,7 +710,8 @@ header p {
   font-size: 2.8rem; }
 
 .card p {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  text-align: center; }
 
 .become-memeber img {
   margin-left: 1rem;
@@ -598,7 +736,13 @@ header p {
 @media screen and (max-width: 600px) {
   .become-memeber img {
     width: 80%;
-    margin-right: 2rem; } }
+    margin-right: 2rem; }
+
+  .become-memeber-wrapper p {
+    font-size: 1.4rem;
+    max-width: 225px;
+    text-align: center;
+    max-width: 350px; } }
 @media screen and (max-width: 998px) {
   .become-memeber img {
     margin-left: 4rem; } }
@@ -610,10 +754,13 @@ header p {
     font-size: 4rem; }
 
   .primary-headeing {
-    font-size: 2.4rem; }
+    font-size: 2rem; }
 
   .secondary-headeing {
     font-size: 1.6rem; } }
+@media screen and (min-width: 1201px) {
+  .primary-headeing {
+    font-size: 3.4rem; } }
 .Contact_us_left {
   min-height: 100vh; }
 
@@ -623,6 +770,13 @@ header p {
 
 .defualt_flex {
   align-items: stretch; }
+
+.u-flex-no-justify {
+  justify-content: stretch; }
+
+.u-flex-space {
+  justify-content: space-between;
+  padding: 2rem 4rem; }
 
 .Contact_us_become-memeber_text {
   flex-wrap: wrap;
@@ -635,6 +789,9 @@ header p {
 .reverse {
   flex-direction: row; }
 
+.row-margin-2 {
+  margin-top: 2rem; }
+
 @media screen and (min-width: 1200px) {
   .reverse {
     flex-direction: row-reverse; } }
@@ -643,7 +800,8 @@ header p {
     width: 28rem; } }
 @media screen and (min-width: 250px) and (max-width: 1400px) {
   .contact_us h1 {
-    font-size: 3.2rem; }
+    font-size: 3.2rem;
+    text-align: center; }
 
   .Contact_us_become-memeber_text {
     padding: 2rem; }
@@ -690,19 +848,27 @@ header p {
   font-size: 1.4rem; }
 
 .dropdown-list__item:hover {
-  background-color: #F0E43F; }
+  background-color: #FFD700; }
 
-.card-img-no-black {
-  background-image: url(/assets/imgs/main-bg.jpg);
+.eagle-card-image-1 {
+  background-image: url(/assets/imgs/eagle-3.webp);
+  background-size: cover; }
+
+.eagle-card-image-2 {
+  background-image: url(/assets/imgs/egale-4.webp);
+  background-size: cover; }
+
+.eagle-card-image-3 {
+  background-image: url(/assets/imgs/eagle-5.webp);
   background-size: cover; }
 
 .u-padding-2 {
   padding: 2rem; }
 
 .card-image-athlete {
-  background-image: url(/assets/imgs/running.jpg);
+  background-image: url(/assets/imgs/don-1.webp);
   background-size: cover;
-  background-position-x: 22%; }
+  background-position-x: 50%; }
 
 .card-image-website {
   background-image: url(/assets/imgs/main-bg.jpg);
@@ -730,7 +896,8 @@ header p {
   padding: 2rem 4rem;
   text-decoration: none;
   background-color: #181818;
-  color: #F0E43F; }
+  color: #FFD700;
+  display: inline-block; }
 
 .about-us-content-wrapper-items {
   display: flex;
@@ -754,5 +921,72 @@ header p {
 
 .u-bold {
   font-weight: bold; }
+
+@media screen and (min-width: 250px) and (max-width: 1024px) {
+  .aboutUs .row {
+    flex-direction: column-reverse; } }
+.athletes-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; }
+
+.image-full-width {
+  width: 100%; }
+
+.image-margin {
+  margin-top: -5rem;
+  margin-right: 5rem; }
+
+.paragraph-font {
+  font-size: 1.6rem; }
+
+.left {
+  padding: 4rem;
+  min-height: 33rem;
+  margin-top: 100px;
+  margin-right: -40px; }
+
+.right-image {
+  flex-direction: row-reverse; }
+
+.row-margin {
+  margin-bottom: 10rem; }
+
+.our-goals-card-padding {
+  padding: 2rem 4rem; }
+
+.yellow-font {
+  color: #FFD700; }
+
+.row-margin {
+  margin-top: 4rem; }
+
+.container-padding {
+  padding: 2rem 4rem; }
+
+.our-goals-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: revert-layer;
+  gap: 2rem; }
+
+@media screen and (min-width: 250px) and (max-width: 1024px) {
+  .our-goals-card-wrapper .paragraph-font {
+    min-width: 250px; }
+
+  .our-goals-section {
+    padding: 0; }
+
+  .aboutUs-button {
+    font-size: 1.2rem; }
+
+  .athelete-memebers .row {
+    flex-direction: column-reverse; }
+
+  .athelete-memebers .left {
+    margin-top: 0; } }
 
 /*# sourceMappingURL=style.css.map */

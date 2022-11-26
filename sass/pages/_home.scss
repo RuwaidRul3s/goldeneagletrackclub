@@ -5,6 +5,16 @@
 }
 
 
+p {
+    font-size: 1.6rem;
+}
+
+
+.u-p-max-width {
+    max-width: 700px;
+}
+
+
 
 // .main-header {
 //     background-image: url(/assets/imgs/main-bg.jpg);
@@ -188,11 +198,14 @@
 }
 
 .become-memeber-btn {
-    padding: 2rem 4rem;
+    padding: 1.5rem 3rem;
     background-color: black;
     color: white;
     font-size: 1.8rem;
     text-decoration: none;
+    display: inline-block;
+    margin-top: 2rem;
+
 }
 
 
@@ -227,7 +240,7 @@
 
 .card p {
     font-size: 1.6rem;
-
+    text-align: center;
 
 }
 
@@ -269,6 +282,15 @@
         width: 80%;
         margin-right: 2rem;
     }
+
+
+    .become-memeber-wrapper p {
+        font-size: 1.4rem;
+        max-width: 225px;
+        text-align: center;
+        max-width: 350px;
+    }
+
 }
 
 @media screen and (max-width:998px) {
@@ -292,7 +314,7 @@
     }
 
     .primary-headeing {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
     .secondary-headeing {
@@ -302,6 +324,13 @@
 
 
 
+}
+
+
+@media screen and(min-width:1201px) {
+    .primary-headeing {
+        font-size: 3.4rem;
+    }
 }
 
 
@@ -327,6 +356,16 @@
     align-items: stretch;
 }
 
+.u-flex-no-justify {
+    justify-content: stretch;
+}
+
+
+.u-flex-space {
+    justify-content: space-between;
+    padding: 2rem 4rem;
+}
+
 
 .Contact_us_become-memeber_text {
     flex-wrap: wrap;
@@ -342,6 +381,10 @@
     flex-direction: row;
 }
 
+
+.row-margin-2 {
+    margin-top: 2rem;
+}
 
 @media screen and (min-width:1200px) {
     .reverse {
@@ -363,6 +406,7 @@
 @media screen and(min-width:250px)and(max-width:1400px) {
     .contact_us h1 {
         font-size: 3.2rem;
+        text-align: center;
 
     }
 

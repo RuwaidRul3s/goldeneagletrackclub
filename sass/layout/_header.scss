@@ -7,7 +7,22 @@
 
 header {
 
+    .dropdown__menu {
+        display: none;
+        position: absolute;
+        right: 0%;
+        background-color: $primary-color;
 
+        ul {
+            display: block;
+            margin: 1rem;
+
+            li {
+
+                padding: 10px;
+            }
+        }
+    }
 
 
     nav {
@@ -41,6 +56,11 @@ header {
     position: absolute;
     left: 60%;
     top: 30%;
+
+}
+
+.header-container .header-container-inner h2 {
+    margin-left: 5%;
 }
 
 
@@ -141,7 +161,17 @@ header {
     }
 }
 
+
+
+
+
+
+
 .logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
     width: 40%;
 }
 
@@ -162,6 +192,23 @@ header {
 
 
 @media screen and(max-width:966px) {
+
+
+
+    header {
+        .dropdown__menu {
+            list-style: none;
+            right: 50%;
+            background: none;
+            transform: translateX(50%);
+
+            ul {
+                text-align: center;
+                list-style-type: none;
+            }
+
+        }
+    }
 
 
     .navigation {
@@ -220,6 +267,15 @@ header {
 
 
 @media screen and (min-width:250px) and (max-width:600px) {
+
+    .company-name .name {
+        font-size: 1.4rem;
+    }
+
+    .company-name .subtitle {
+        font-size: 1.2rem;
+    }
+
     header nav {
         padding: 2rem;
     }
@@ -245,15 +301,62 @@ header {
     }
 
 
+
+
 }
 
 
-@media screen and(min-width:1024px) and (max-width:1440px) {
+@media screen and(min-width:1024px)and(max-width:1300px) {
     .header-bg {
         overflow: hidden;
     }
 
     .header-container {
         top: 20%;
+    }
+
+    .navigation {
+        .hamburger {
+            opacity: 1;
+        }
+
+        .links {
+
+            background-color: $secondary-color;
+            position: fixed;
+            top: 0;
+            left: 0;
+            visibility: hidden;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 2rem;
+
+
+
+            a {
+                color: black;
+            }
+        }
+
+
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .header-container {
+        top: auto;
+        left: 0;
+        bottom: 0;
+        max-width: none;
+    }
+
+    header {
+        background-position-x: 22%;
     }
 }

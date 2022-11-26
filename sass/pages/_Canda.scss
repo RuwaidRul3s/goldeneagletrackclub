@@ -1,0 +1,91 @@
+.athletes-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.image-full-width {
+    width: 100%;
+}
+
+.image-margin {
+    margin-top: -5rem;
+    margin-right: 5rem;
+}
+
+
+.paragraph-font {
+    font-size: 1.6rem;
+}
+
+.left {
+    padding: 4rem;
+    min-height: 33rem;
+    margin-top: 100px;
+    margin-right: -40px
+}
+
+
+.right-image {
+    flex-direction: row-reverse;
+}
+
+
+.row-margin {
+    margin-bottom: 10rem;
+}
+
+.our-goals-card-padding {
+    padding: 2rem 4rem;
+}
+
+
+.yellow-font {
+    color: $secondary-color;
+}
+
+
+.row-margin {
+    margin-top: 4rem;
+}
+
+.container-padding {
+    padding: 2rem 4rem;
+}
+
+
+
+.our-goals-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: revert-layer;
+    gap: 2rem;
+}
+
+
+@media screen and(min-width:250px) and(max-width:1024px) {
+    .our-goals-card-wrapper .paragraph-font {
+        min-width: 250px;
+    }
+
+    .our-goals-section {
+        padding: 0;
+    }
+
+    .aboutUs-button {
+        font-size: 1.2rem;
+    }
+
+    .athelete-memebers .row {
+        flex-direction: column-reverse;
+
+    }
+
+    .athelete-memebers .left {
+        margin-top: 0;
+    }
+}

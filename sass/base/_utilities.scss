@@ -2,3 +2,12 @@
     width: 100%;
     margin: 0 auto;
 }
+
+
+//  Creating Styles for heading 
+
+@for $size from 1 through 3 {
+    .header-#{$size} {
+        font-size: 1.6rem *$size;
+    }
+}

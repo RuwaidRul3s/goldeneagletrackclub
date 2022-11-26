@@ -31,6 +31,8 @@
     background-color: $primary-color;
     color: $secondary-color;
 
+    display: inline-block;
+
 }
 
 
@@ -67,4 +69,13 @@
 
 .u-bold {
     font-weight: bold;
+}
+
+
+
+
+@media screen and(min-width:250px) and(max-width:1024px) {
+    .aboutUs .row {
+        flex-direction: column-reverse;
+    }
 }
