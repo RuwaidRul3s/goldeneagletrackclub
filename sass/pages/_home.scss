@@ -1,73 +1,35 @@
 @media screen and(min-width:250px) and(max-width:600px) {
-    p {
-        font-size: 1.5rem;
-    }
-}
-
-
-p {
-    font-size: 1.6rem;
-}
 
 
 .u-p-max-width {
-    max-width: 700px;
+    max-width: 600px;
+}
+}
+
+.u-p-max-width {
+
+    @media screen and(min-width:250px) and(max-width:600px) {
+
+        max-width: 600px;
+    }
+
+    @media screen and(min-width:1024px) {
+
+        max-width: 700px;
+    }
+
 }
 
 
 
-// .main-header {
-//     background-image: url(/assets/imgs/main-bg.jpg);
-//     background-size: cover;
-//     min-height: 100vh;
-//     background-color: $secondary-color;
-//     // -webkit-filter: grayscale(100%);
-//     // /* Safari 6.0 - 9.0 */
-//     // filter: grayscale(100%);
 
 
-// }
-
-
-
-// .header-content {
-//     min-width: 700px;
-//     padding: 4rem;
-//     position: absolute;
-//     top: 60%;
-//     left: 75%;
-//     background-color: $secondary-color;
-//     transform: translate(-50%, -50%);
-// }
-
-.primary-headeing {
-    color: black;
-    font-size: 4.8rem;
-}
 
 .u-center {
     text-align: center;
 }
 
-.secondary-headeing {
-    font-size: 2.4rem;
 
-}
-
-// .section-paragraph {
-//     font-size: 2.4rem;
-//     max-width: 500px;
-//     margin-top: 1rem;
-// }
-
-
-// .custom-path1 {
-
-
-//     -webkit-clip-path: polygon(0 0, 100% 0%, 43% 100%, 0% 100%);
-//     clip-path: polygon(0 0, 100% 0%, 43% 100%, 0% 100%);
-
-// }
 
 .custom-path3 {
 
@@ -77,29 +39,6 @@ p {
 
 }
 
-// .custom-path-footer {
-
-
-//     -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-//     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-
-// }
-
-
-
-// .padding-0 {
-//     padding: 0;
-// }
-
-
-
-// .custom-path2 {
-
-
-//     -webkit-clip-path: polygon(19% 0, 100% 0%, 100% 99%, 0 100%);
-//     clip-path: polygon(19% 0, 100% 0%, 100% 99%, 0 100%);
-
-// }
 
 .seconday-color-bg {
     background-color: $secondary-color;
@@ -161,6 +100,14 @@ p {
     filter: grayscale(100%);
 }
 
+.Our-Values-section h1 
+{
+    font-size: $mobile-fontSize-h1;
+    @media screen and (min-width:1024px) {
+        font-size:2.8rem;
+    }
+}
+
 
 .sixty-percent-left {
     left: 65%;
@@ -184,7 +131,7 @@ p {
 
 .section-title {
     text-align: center;
-    font-size: 7.2rem;
+    // font-size: 7.2rem;
 }
 
 
@@ -201,18 +148,54 @@ p {
     padding: 1.5rem 3rem;
     background-color: black;
     color: white;
-    font-size: 1.8rem;
+    font-size: $mobile-fontSize-Paragraph;
     text-decoration: none;
     display: inline-block;
     margin-top: 2rem;
+
+    @media screen and (min-width:1024px) {
+        font-size:1.8rem;
+    }
 
 }
 
 
 
 .card-img-1 {
-    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(/assets/imgs/main-bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(/assets/imgs/awarness.webp),url(/assets/imgs/awarness-min.jpg);
     background-size: cover;
+
+}
+
+
+.card-img-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(/assets/imgs/resilnicaeValue.webp),url(/assets/imgs/resilnicaeValue-min.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.card-img-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(/assets/imgs/CandaBG.webp),url(/assets/imgs/CandaBG-min.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.card-img-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(/assets/imgs/focusValue.webp),url(/assets/imgs/focusValue-min.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.card-img-5 {
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(/assets/imgs/TeamWorkValue.webp),url(/assets/imgs/TeamWorkValue-min.jpg);
+    background-size: cover;
+    background-position: center;
 
 }
 
@@ -234,12 +217,10 @@ p {
     gap: 2rem;
 }
 
-.card h1 {
-    font-size: 2.8rem;
-}
+
 
 .card p {
-    font-size: 1.6rem;
+  
     text-align: center;
 
 }
@@ -248,6 +229,9 @@ p {
     margin-left: 1rem;
     width: 90%;
 }
+
+
+
 
 .section-margin {
     margin-top: 13rem;
@@ -274,7 +258,7 @@ p {
 
 
 
-// Media Quaires for Become Member section 
+// Media Quaires for Become Member section (imgages) 
 
 
 @media screen and (max-width:600px) {
@@ -285,7 +269,8 @@ p {
 
 
     .become-memeber-wrapper p {
-        font-size: 1.4rem;
+         
+        
         max-width: 225px;
         text-align: center;
         max-width: 350px;
@@ -306,35 +291,6 @@ p {
 }
 
 
-// Section Title Media Quaires 
-
-@media screen and (min-width:300px) and (max-width:1200px) {
-    .section-title {
-        font-size: 4rem;
-    }
-
-    .primary-headeing {
-        font-size: 2rem;
-    }
-
-    .secondary-headeing {
-        font-size: 1.6rem;
-    }
-
-
-
-
-}
-
-
-@media screen and(min-width:1201px) {
-    .primary-headeing {
-        font-size: 3.4rem;
-    }
-}
-
-
-
 
 
 
@@ -346,11 +302,11 @@ p {
 }
 
 
-.contact_us h1 {
-    color: white;
+// .contact_us h1 {
+//     color: white;
+//     font-size: 6.4rem;
 
-    font-size: 7.2rem;
-}
+// }
 
 .defualt_flex {
     align-items: stretch;
@@ -404,11 +360,7 @@ p {
 
 
 @media screen and(min-width:250px)and(max-width:1400px) {
-    .contact_us h1 {
-        font-size: 3.2rem;
-        text-align: center;
-
-    }
+     
 
     .Contact_us_become-memeber_text {
         padding: 2rem;
@@ -418,3 +370,9 @@ p {
         margin-top: 0px;
     }
 }
+
+
+
+
+
+

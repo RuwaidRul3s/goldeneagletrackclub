@@ -6,9 +6,24 @@
     gap: 2rem;
 }
 
+.u-overflow-hidden {
+    overflow: hidden;
+}
+
+
+.u-center-container {
+    max-width: 1200px;
+
+}
+
+
+
 
 .image-full-width {
     width: 100%;
+    display: block;
+    height: 50rem;
+    object-fit: cover;
 }
 
 .image-margin {
@@ -24,7 +39,7 @@
 .left {
     padding: 4rem;
     min-height: 33rem;
-    margin-top: 100px;
+    // margin-top: 100px;
     margin-right: -40px
 }
 
@@ -67,6 +82,14 @@
 }
 
 
+@media screen and (min-width:1024px) {
+    .athelete-memebers .row {
+
+        flex-wrap: nowrap;
+    }
+}
+
+
 @media screen and(min-width:250px) and(max-width:1024px) {
     .our-goals-card-wrapper .paragraph-font {
         min-width: 250px;
@@ -82,7 +105,7 @@
 
     .athelete-memebers .row {
         flex-direction: column-reverse;
-
+        flex-wrap: wrap;
     }
 
     .athelete-memebers .left {

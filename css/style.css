@@ -16,18 +16,34 @@ body {
   width: 100%;
   margin: 0 auto; }
 
-.header-1 {
+.heading-primary {
+  font-size: 2rem; }
+  @media screen and (min-width: 1024px) {
+    .heading-primary {
+      font-size: 3.4rem; } }
+
+.heading-secondary {
   font-size: 1.6rem; }
+  @media screen and (min-width: 1024px) {
+    .heading-secondary {
+      font-size: 2.8rem; } }
 
-.header-2 {
-  font-size: 3.2rem; }
+.paragraph-text {
+  font-size: 1.4rem; }
+  @media screen and (min-width: 1024px) {
+    .paragraph-text {
+      font-size: 1.8rem; } }
 
-.header-3 {
-  font-size: 4.8rem; }
+.form_title-font-size {
+  color: white;
+  font-size: 2rem; }
+  @media screen and (min-width: 1024px) {
+    .form_title-font-size {
+      font-size: 6.4rem; } }
 
 .header-bg {
   position: relative;
-  background-image: url(/assets/imgs/main-bg.jpg);
+  background-image: url(/assets/imgs/Photo\ Nov\ 25\ 2022\,\ 12\ 22\ 22\ AM.webp), url(/assets/imgs/Photo\ Nov\ 25\ 2022\,\ 12\ 22\ 22\ AM-min.jpg);
   min-height: 95vh;
   background-size: cover; }
 
@@ -47,13 +63,13 @@ header nav {
   justify-content: space-between;
   align-items: center; }
 header h1 {
-  font-size: 5.2rem;
+  font-size: 3.4;
   margin-bottom: 1rem;
   line-height: 1.05; }
 header h2 {
-  font-size: 4.4rem; }
+  font-size: 2.8rem; }
 header p {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   line-height: 1.6; }
 
 .header-container {
@@ -64,7 +80,7 @@ header p {
   top: 30%; }
 
 .header-container .header-container-inner h2 {
-  margin-left: 5%; }
+  margin-left: 0%; }
 
 .navigation {
   z-index: 1;
@@ -189,6 +205,18 @@ header p {
   header {
     background-position-x: 22%; } }
 @media screen and (min-width: 250px) and (max-width: 600px) {
+  .header-container-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center; }
+    .header-container-inner .become-memeber-btn {
+      font-size: 1.4rem; } }
+    @media screen and (min-width: 250px) and (max-width: 600px) and (min-width: 1024px) {
+      .header-container-inner .become-memeber-btn {
+        font-size: 1.8rem; } }
+
+@media screen and (min-width: 250px) and (max-width: 600px) {
   .company-name .name {
     font-size: 1.4rem; }
 
@@ -202,18 +230,23 @@ header p {
     flex-direction: column; }
 
   .header-bg {
-    min-height: 200vh; }
+    min-height: 150vh;
+    background-position: 50%; }
 
   .navigation .hamburger {
     top: 2rem; }
 
   header h1 {
-    font-size: 4.2rem; }
+    font-size: 2rem; }
 
   header h2 {
-    font-size: 3.4rem; } }
-@media screen and (min-width: 1024px) and (max-width: 1300px) {
+    font-size: 1.6rem; }
+
+  header p {
+    font-size: 1.4rem; } }
+@media screen and (min-width: 750px) and (max-width: 1300px) {
   .header-bg {
+    min-height: 150vh;
     overflow: hidden; }
 
   .header-container {
@@ -472,18 +505,21 @@ header p {
     align-items: center;
     background-color: white; }
   .accordion_text {
-    font-size: 2.4rem;
+    font-size: 1.4rem;
     font-weight: 500;
     color: #181818; }
   .accordion_hidden-box {
     display: none; }
     .accordion_hidden-box ul {
-      font-size: 2rem;
+      font-size: 1.4rem;
       color: #181818;
       margin-left: 20px;
       display: flex;
       flex-direction: column;
       gap: 12px; }
+      @media screen and (min-width: 1024px) {
+        .accordion_hidden-box ul {
+          font-size: 1.8rem; } }
       .accordion_hidden-box ul li {
         margin-top: 1rem; }
 
@@ -499,8 +535,11 @@ header p {
     width: 30rem; }
 
   .accordion_hidden-box {
-    font-size: 1.5rem;
-    color: Red; } }
+    font-size: 1.4rem; } }
+  @media screen and (max-width: 600px) and (min-width: 1024px) {
+    .accordion_hidden-box {
+      font-size: 1.8rem; } }
+
 .custom_card {
   overflow: hidden;
   gap: 3rem;
@@ -527,7 +566,7 @@ header p {
     padding: 2rem;
     width: 100%;
     text-align: center; }
-  .custom_card .custom_card_Button {
+  .custom_card .custom_card_Button, .custom_card .custom_button_one {
     font-size: 1.6rem;
     padding: 2rem 4rem;
     text-decoration: none;
@@ -570,7 +609,8 @@ header p {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0; }
+    border-bottom-right-radius: 0;
+    font-size: 1.4rem; }
   .form input[type=checkbox] {
     min-width: 20px; }
 
@@ -578,11 +618,8 @@ header p {
   margin-top: 0.5rem;
   display: flex;
   gap: 1rem;
-  font-size: 1.7rem; }
+  font-size: 1.4rem; }
 
-@media screen and (min-width: 250px) and (max-width: 600px) {
-  .checkbutton-wrapper {
-    font-size: 1.2rem; } }
 .goal-card .title p {
   font-size: 3.2rem;
   color: black; }
@@ -591,23 +628,17 @@ header p {
   color: black; }
 
 @media screen and (min-width: 250px) and (max-width: 600px) {
-  p {
-    font-size: 1.5rem; } }
-p {
-  font-size: 1.6rem; }
-
-.u-p-max-width {
-  max-width: 700px; }
-
-.primary-headeing {
-  color: black;
-  font-size: 4.8rem; }
+  .u-p-max-width {
+    max-width: 600px; } }
+@media screen and (min-width: 250px) and (max-width: 600px) {
+  .u-p-max-width {
+    max-width: 600px; } }
+@media screen and (min-width: 1024px) {
+  .u-p-max-width {
+    max-width: 700px; } }
 
 .u-center {
   text-align: center; }
-
-.secondary-headeing {
-  font-size: 2.4rem; }
 
 .custom-path3 {
   -webkit-clip-path: polygon(0 0, 73% 0, 100% 100%, 0 100%);
@@ -652,6 +683,12 @@ p {
   /* Safari 6.0 - 9.0 */
   filter: grayscale(100%); }
 
+.Our-Values-section h1 {
+  font-size: 2rem; }
+  @media screen and (min-width: 1024px) {
+    .Our-Values-section h1 {
+      font-size: 2.8rem; } }
+
 .sixty-percent-left {
   left: 65%; }
 
@@ -666,8 +703,7 @@ p {
   font-size: 2.4rem; }
 
 .section-title {
-  text-align: center;
-  font-size: 7.2rem; }
+  text-align: center; }
 
 .become-memeber-wrapper {
   display: flex;
@@ -680,14 +716,37 @@ p {
   padding: 1.5rem 3rem;
   background-color: black;
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   text-decoration: none;
   display: inline-block;
   margin-top: 2rem; }
+  @media screen and (min-width: 1024px) {
+    .become-memeber-btn {
+      font-size: 1.8rem; } }
 
 .card-img-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/imgs/main-bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/imgs/awarness.webp), url(/assets/imgs/awarness-min.jpg);
   background-size: cover; }
+
+.card-img-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/imgs/resilnicaeValue.webp), url(/assets/imgs/resilnicaeValue-min.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.card-img-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/imgs/CandaBG.webp), url(/assets/imgs/CandaBG-min.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.card-img-4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/imgs/focusValue.webp), url(/assets/imgs/focusValue-min.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.card-img-5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/assets/imgs/TeamWorkValue.webp), url(/assets/imgs/TeamWorkValue-min.jpg);
+  background-size: cover;
+  background-position: center; }
 
 .card {
   margin-bottom: 2rem;
@@ -706,11 +765,7 @@ p {
   text-decoration: none;
   gap: 2rem; }
 
-.card h1 {
-  font-size: 2.8rem; }
-
 .card p {
-  font-size: 1.6rem;
   text-align: center; }
 
 .become-memeber img {
@@ -739,7 +794,6 @@ p {
     margin-right: 2rem; }
 
   .become-memeber-wrapper p {
-    font-size: 1.4rem;
     max-width: 225px;
     text-align: center;
     max-width: 350px; } }
@@ -749,24 +803,8 @@ p {
 @media screen and (min-width: 999px) {
   .become-memeber img {
     margin-left: 5rem; } }
-@media screen and (min-width: 300px) and (max-width: 1200px) {
-  .section-title {
-    font-size: 4rem; }
-
-  .primary-headeing {
-    font-size: 2rem; }
-
-  .secondary-headeing {
-    font-size: 1.6rem; } }
-@media screen and (min-width: 1201px) {
-  .primary-headeing {
-    font-size: 3.4rem; } }
 .Contact_us_left {
   min-height: 100vh; }
-
-.contact_us h1 {
-  color: white;
-  font-size: 7.2rem; }
 
 .defualt_flex {
   align-items: stretch; }
@@ -799,10 +837,6 @@ p {
   .card {
     width: 28rem; } }
 @media screen and (min-width: 250px) and (max-width: 1400px) {
-  .contact_us h1 {
-    font-size: 3.2rem;
-    text-align: center; }
-
   .Contact_us_become-memeber_text {
     padding: 2rem; }
 
@@ -851,31 +885,38 @@ p {
   background-color: #FFD700; }
 
 .eagle-card-image-1 {
-  background-image: url(/assets/imgs/eagle-3.webp);
-  background-size: cover; }
+  background-image: url(/assets/imgs/focusValue.webp), url(/assets/imgs/focusValue-min.jpg);
+  background-size: cover;
+  background-position: center; }
 
 .eagle-card-image-2 {
-  background-image: url(/assets/imgs/egale-4.webp);
-  background-size: cover; }
+  background-image: url(/assets/imgs/HouseLeagueNew.webp), url(/assets/imgs/HouseLeagueNew-min.jpg);
+  background-size: cover;
+  background-position: center; }
 
 .eagle-card-image-3 {
-  background-image: url(/assets/imgs/eagle-5.webp);
-  background-size: cover; }
+  background-image: url(/assets/imgs/OlympicDevelopment.webp), url(/assets/imgs/OlympicDevelopment-min.jpg);
+  background-size: cover;
+  background-position: center; }
 
 .u-padding-2 {
   padding: 2rem; }
 
 .card-image-athlete {
-  background-image: url(/assets/imgs/don-1.webp);
-  background-size: cover;
-  background-position-x: 50%; }
-
-.card-image-website {
-  background-image: url(/assets/imgs/main-bg.jpg);
+  background-image: url(/assets/imgs/sponsorAthlete.webp), url(/assets/imgs/sponsorAthlete-min.JPG);
   background-size: cover; }
 
+.card-image-website {
+  background-image: url(/assets/imgs/HouseLeagueNew.webp), url(/assets/imgs/HouseLeagueNew-min.jpg);
+  background-size: cover; }
+
+@media screen and (max-width: 1024px) {
+  .custom_button_one {
+    padding: 1.5rem 3rem !important; } }
+
 .aboutUs img {
-  width: 100%; }
+  width: 100%;
+  display: block; }
 
 .about-us-content-wrapper {
   padding: 2rem 4rem;
@@ -932,8 +973,17 @@ p {
   justify-content: center;
   gap: 2rem; }
 
+.u-overflow-hidden {
+  overflow: hidden; }
+
+.u-center-container {
+  max-width: 1200px; }
+
 .image-full-width {
-  width: 100%; }
+  width: 100%;
+  display: block;
+  height: 50rem;
+  object-fit: cover; }
 
 .image-margin {
   margin-top: -5rem;
@@ -945,7 +995,6 @@ p {
 .left {
   padding: 4rem;
   min-height: 33rem;
-  margin-top: 100px;
   margin-right: -40px; }
 
 .right-image {
@@ -973,6 +1022,9 @@ p {
   justify-content: revert-layer;
   gap: 2rem; }
 
+@media screen and (min-width: 1024px) {
+  .athelete-memebers .row {
+    flex-wrap: nowrap; } }
 @media screen and (min-width: 250px) and (max-width: 1024px) {
   .our-goals-card-wrapper .paragraph-font {
     min-width: 250px; }
@@ -984,7 +1036,8 @@ p {
     font-size: 1.2rem; }
 
   .athelete-memebers .row {
-    flex-direction: column-reverse; }
+    flex-direction: column-reverse;
+    flex-wrap: wrap; }
 
   .athelete-memebers .left {
     margin-top: 0; } }

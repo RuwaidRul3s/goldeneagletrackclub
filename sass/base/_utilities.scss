@@ -4,10 +4,39 @@
 }
 
 
-//  Creating Styles for heading 
+.heading-primary
+{
+    font-size:$mobile-fontSize-h1;
 
-@for $size from 1 through 3 {
-    .header-#{$size} {
-        font-size: 1.6rem *$size;
+    @media screen and (min-width:1024px) {
+        font-size:3.4rem;
+    }
+}
+
+.heading-secondary
+{
+    font-size: $mobile-fontSize-h2;
+
+     @media screen and (min-width:1024px) {
+        font-size:2.8rem;
+    }
+}
+
+.paragraph-text
+{
+    font-size: $mobile-fontSize-Paragraph;
+
+    @media screen and (min-width:1024px) {
+        font-size:1.8rem;
+    }
+}
+
+.form_title-font-size
+{
+    color:white;
+    font-size:$mobile-fontSize-h1;
+
+    @media screen and (min-width:1024px) {
+        font-size: 6.4rem;
     }
 }

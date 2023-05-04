@@ -1,11 +1,17 @@
 .header-bg {
     position: relative;
-    background-image: url(/assets/imgs/main-bg.jpg);
+    background-image: url(/assets/imgs/Photo\ Nov\ 25\ 2022\,\ 12\ 22\ 22\ AM.webp) , url(/assets/imgs/Photo\ Nov\ 25\ 2022\,\ 12\ 22\ 22\ AM-min.jpg);
     min-height: 95vh;
     background-size: cover;
+
+
 }
 
+
+
 header {
+
+    
 
     .dropdown__menu {
         display: none;
@@ -33,17 +39,17 @@ header {
     }
 
     h1 {
-        font-size: 5.2rem;
+        font-size: 3.4;
         margin-bottom: 1rem;
         line-height: 1.05;
     }
 
     h2 {
-        font-size: 4.4rem;
+        font-size: 2.8rem;
     }
 
     p {
-        font-size: 2.4rem;
+        font-size: 1.8rem;
         line-height: 1.6;
     }
 
@@ -60,7 +66,7 @@ header {
 }
 
 .header-container .header-container-inner h2 {
-    margin-left: 5%;
+    margin-left: 0%;
 }
 
 
@@ -268,6 +274,24 @@ header {
 
 @media screen and (min-width:250px) and (max-width:600px) {
 
+
+
+.header-container-inner
+{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: center;
+
+    .become-memeber-btn
+    {
+        font-size: $mobile-fontSize-Paragraph;
+        @media screen and (min-width:1024px) {
+            font-size:1.8rem;
+        }
+    }
+}
+
     .company-name .name {
         font-size: 1.4rem;
     }
@@ -285,7 +309,8 @@ header {
     }
 
     .header-bg {
-        min-height: 200vh;
+        min-height:150vh;
+        background-position: 50%;
     }
 
     .navigation .hamburger {
@@ -293,11 +318,19 @@ header {
     }
 
     header h1 {
-        font-size: 4.2rem;
+        
+        font-size:$mobile-fontSize-h1;
     }
 
     header h2 {
-        font-size: 3.4rem;
+         
+        font-size: $mobile-fontSize-h2;
+    }
+
+    header p 
+    {
+        font-size: $mobile-fontSize-Paragraph;
+        
     }
 
 
@@ -305,9 +338,14 @@ header {
 
 }
 
+ 
 
-@media screen and(min-width:1024px)and(max-width:1300px) {
+
+@media screen and(min-width:750px)and(max-width:1300px) {
     .header-bg {
+        
+        min-height: 150vh;
+        
         overflow: hidden;
     }
 
@@ -360,3 +398,5 @@ header {
         background-position-x: 22%;
     }
 }
+
+

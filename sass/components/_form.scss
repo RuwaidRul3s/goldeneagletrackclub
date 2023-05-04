@@ -46,6 +46,8 @@
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
 
+        font-size: $mobile-fontSize-Paragraph;
+
 
     }
 
@@ -64,15 +66,6 @@
     margin-top: 0.5rem;
     display: flex;
     gap: 1rem;
-    font-size: 1.7rem;
+    font-size: $mobile-fontSize-Paragraph;
 }
 
-
-// Media Quaries for form
-
-@media screen and(min-width:250px) and(max-width:600px) {
-    .checkbutton-wrapper {
-
-        font-size: 1.2rem;
-    }
-}

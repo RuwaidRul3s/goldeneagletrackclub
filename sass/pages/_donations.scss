@@ -1,10 +1,21 @@
 .card-image-athlete {
-    background-image: url(/assets/imgs/don-1.webp);
+    background-image: url(/assets/imgs/sponsorAthlete.webp),url(/assets/imgs/sponsorAthlete-min.JPG);
     background-size: cover;
-    background-position-x: 50%;
+
 }
 
 .card-image-website {
-    background-image: url(/assets/imgs/main-bg.jpg);
+    background-image: url(/assets/imgs/HouseLeagueNew.webp),url(/assets/imgs/HouseLeagueNew-min.jpg);
     background-size: cover;
+
+}
+
+
+.custom_button_one
+{
+    @extend .custom_card_Button;
+    @media screen and (max-width:1024px) {
+        padding: 1.5rem 3rem !important;
+    }
+    
 }

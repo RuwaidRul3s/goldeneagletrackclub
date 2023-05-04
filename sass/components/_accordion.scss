@@ -18,7 +18,7 @@
     }
 
     &_text {
-        font-size: 2.4rem;
+        font-size: $mobile-fontSize-Paragraph;
         font-weight: 500;
         color: $primary-color;
     }
@@ -27,12 +27,19 @@
         display: none;
 
         ul {
-            font-size: 2rem;
+            font-size:$mobile-fontSize-Paragraph;
+
+            @media screen and(min-width:1024px)
+            {
+                font-size:1.8rem;
+            }
             color: $primary-color;
             margin-left: 20px;
             display: flex;
             flex-direction: column;
             gap: 12px;
+
+
 
             li {
                 margin-top: 1rem;
@@ -61,7 +68,16 @@
     }
 
     .accordion_hidden-box {
-        font-size: 1.5rem;
-        color: Red;
+        font-size: $mobile-fontSize-Paragraph;
+
+        @media screen and(min-width:1024px) {
+
+            font-size:1.8rem;
+    
+        }
+         
     }
 }
+
+
+ 
